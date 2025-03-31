@@ -1,9 +1,9 @@
 
-/* Añadimos un nav general */
-/*.Menu {
+Añadimos un nav general */
+.Menu {
     width: 100%; /* Para que ocupe todo el ancho disponible */
-  /*  background-color: #6ff5f5; /* Fondo oscuro para el menú */
-   /* color: white; /* Color del texto */
-   /* padding: 20px 0px; /* Espaciado interno */
-   /* text-align: center; /* Centra el contenido */
-/*}
+    background-color: #6ff5f5; /* Fondo oscuro para el menú */
+    color: white; /* Color del texto */
+    padding: 20px 0px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
