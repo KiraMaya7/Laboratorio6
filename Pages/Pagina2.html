@@ -10,20 +10,20 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Mundial 2026</a>
+            <a class="navbar-brand" href="../index.html">Olimpiadas</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="Pagina1.html">México</a>
+                        <a class="nav-link" href="Pagina1.html">Ultimas Olimpiadas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Estados Unidos</a>
+                        <a class="nav-link" href="">Deportes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Pagina3.html">Canadá</a>
+                        <a class="nav-link" href="Pagina3.html">Logros</a>
                     </li>
                 </ul>
             </div>
@@ -31,29 +31,81 @@
     </nav>
 
     <main class="container mt-5 pt-5">
-        <h1 class="text-center mb-5">Estadios de México</h1>
-        
+        <h1 class="text-center mb-5">Deportes más vistos</h1>
+
         <div class="row g-4">
             <!-- Estadio 1 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow">
-                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Estadio Azteca">
+                    <img src="../Img/FUTBOL.jpeg" class="card-img-top" alt="Estadio Azteca">
                     <div class="card-body">
-                        <h5 class="card-title">Estadio Azteca</h5>
+                        <h5 class="card-title">Futbol</h5>
                         <p class="card-text">
-                            <strong>Ciudad:</strong> CDMX<br>
-                            <strong>Capacidad:</strong> 87,523 espectadores<br>
-                            <strong>Historia:</strong> Único estadio en albergar dos finales de Mundial
+                            <strong>Deporte:</strong> Fútbol<br>
+                            <strong>Ciudad:</strong> Mundial<br>
+                            <strong>Capacidad:</strong> Entre 50,000 y 90,000 espectadores<br>
+                            <strong>Historia:</strong> El deporte más popular del mundo, presente en los JJ.OO. desde 1900.
                         </p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('futbol')">Ver más</a>
                     </div>
                 </div>
             </div>
             
             <!-- Repetir para otros 2 estadios -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/BALONCESTO.jpeg" class="card-img-top" alt="Estadio Azteca">
+                    <div class="card-body">
+                        <h5 class="card-title">Baloncesto</h5>
+                        <p class="card-text">
+                            <strong>Deporte:</strong> Baloncesto<br>
+                            <strong>Ciudad:</strong> EE.UU. (origen), popular globalmente<br>
+                            <strong>Capacidad:</strong> Entre 15,000 y 20,000 espectadores<br>
+                            <strong>Historia:</strong> Olímpico desde 1936, EE.UU. ha ganado 16 oros en varonil.
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('baloncesto')">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/CRICKET.jpeg" class="card-img-top" alt="Estadio Azteca">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket</h5>
+                        <p class="card-text">
+                            <strong>Deporte:</strong> Críquet<br>
+                            <strong>Ciudad:</strong> Popular en India, Inglaterra y Australia<br>
+                            <strong>Capacidad:</strong> Hasta 130,000 espectadores (Narendra Modi Stadium)<br>
+                            <strong>Historia:</strong> Vuelve a los Juegos Olímpicos en Los Ángeles 2028.
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('criquet')">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
+            <!-- Modal -->
+    <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalInfoLabel">Información del deporte</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" id="modalContent">
+            <!-- Aquí se insertará el contenido dinámico -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="botones.js"></script>
 </body>
 </html>
