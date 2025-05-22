@@ -10,24 +10,20 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-
             <a class="navbar-brand" href="../index.html">Olimpiadas 2026</a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-
                         <a class="nav-link" href="Pagina1.html">Ultimas Olimpiadas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pagina2.html">Deportes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Logros</a>
-
+                        <a class="nav-link active" href="#">Logros</a>
                     </li>
                 </ul>
             </div>
@@ -38,17 +34,15 @@
         <h1 class="text-center mb-5">Medallistas Mexicanos</h1>
         
         <div class="row g-4">
-            <!-- Estadio 1 -->
-             <div class="row g-4">
-            <!-- Estadio 1 -->
+            <!-- Tarjeta 1 - Prisca Awiti -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow">
-                    <img src="../Img/Prisca_Awiti.jpeg" class="card-img-top" alt="Estadio Azteca">
+                    <img src="../Img/Prisca_Awiti.jpeg" class="card-img-top" alt="Prisca Awiti">
                     <div class="card-body">
                         <h5 class="card-title">Prisca Awiti</h5>
                         <p class="card-text">
                             <strong>Deporte:</strong> Judo (-63 kg)<br>
-                            <strong>Origen:</strong> Enfield, Inglaterra (Representa a México)<br>
+                            <strong>Origen:</strong> Enfield, Inglaterra<br>
                             <strong>Logro en París 2024:</strong> Medalla de Plata
                         </p>
                         <a href="#" class="btn btn-primary" onclick="mostrarInfo('judo')">Ver más</a>
@@ -56,75 +50,79 @@
                 </div>
             </div>
             
-            <!-- Repetir para otros 2 estadios -->
+            <!-- Tarjeta 2 - Osmar Olvera -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow">
-                    <img src="../Img/Osmar_Olvera.jpeg" class="card-img-top" alt="Estadio Azteca">
+                    <img src="../Img/Osmar_Olvera.jpeg" class="card-img-top" alt="Osmar Olvera">
                     <div class="card-body">
                         <h5 class="card-title">Osmar Olvera</h5>
                         <p class="card-text">
-                            <strong>Deporte:</strong> Clavados (Trampolín 3m)<br>
-                            <strong>Origen:</strong> Ciudad de México, México<br>
-                            <strong>Logros en París 2024:</strong> Medalla de Plata (sincronizado) y Medalla de Bronce (individual)
+                            <strong>Deporte:</strong> Clavados<br>
+                            <strong>Origen:</strong> Ciudad de México<br>
+                            <strong>Logros en París 2024:</strong> Plata y Bronce
                         </p>
                         <a href="#" class="btn btn-primary" onclick="mostrarInfo('clavados')">Ver más</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Tarjeta 3 - Alejandra Valencia -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow">
-                    <img src="../Img/ALEJANDRA_VALENCIA.jpeg" class="card-img-top" alt="Estadio Azteca">
+                    <img src="../Img/ALEJANDRA_VALENCIA.jpeg" class="card-img-top" alt="Alejandra Valencia">
                     <div class="card-body">
                         <h5 class="card-title">Alejandra Valencia</h5>
                         <p class="card-text">
                             <strong>Deporte:</strong> Tiro con Arco<br>
-                            <strong>Origen:</strong> Hermosillo, Sonora, México<br>
-                            <strong>Logros en París 2024:</strong> Medalla de Bronce (equipo femenino) y Medalla de Bronce (equipo mixto)
+                            <strong>Origen:</strong> Hermosillo, Sonora<br>
+                            <strong>Logros en París 2024:</strong> 2 Medallas de Bronce
                         </p>
                         <a href="#" class="btn btn-primary" onclick="mostrarInfo('arco')">Ver más</a>
                     </div>
                 </div>
             </div>
         </div>
-            
-            <!-- Repetir para otros 2 estadios -->
-        </div>
     </main>
-<footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
-  <div class="container">
-    <div class="row">
-      <!-- Columna 1 -->
-      <div class="col-md-6 mb-3">
-        <h5 class="fw-bold">PIA</h5>
-        <p class="text-light">
-          Este es el PIA de la materia Lenguajes de Programación y Lab. Consiste en 
-          una Página Web que habla sobre el tema de las Olimpiadas.
-        </p>
-      </div>
 
-
-      <!-- Pie de pagina -->
-      <div class="col-md-6 mb-3">
-        <h5 class="fw-bold">EQUIPO 1 - Lenguajes de Programación y Lab</h5>
-        <a href="#" class="text-light me-3 text-decoration-none">
-          <i></i> Anthony Joel Ramón López -    2058255 ITS <br>
-        </a>
-        <a href="#" class="text-light me-3 text-decoration-none">
-          <i></i> José Angel Martínez Maya -    1753837 ITS <br>
-        </a>
-        <a href="#" class="text-light text-decoration-none">
-          <i></i> ESPACIO <br>
-        </a>
-        <a href="#" class="text-light text-decoration-none">
-          <i></i> ESPACIO 
-        </a>  
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalInfo" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalles del logro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <hr class="border-light">
-    <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos. Todos los derechos reservados.</p>
-  </div>
-  </footer>
+
+    <footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5 class="fw-bold">PIA</h5>
+                    <p class="text-light">
+                        Este es el PIA de la materia Lenguajes de Programación y Lab.<br>
+                        Página Web sobre las Olimpiadas.
+                    </p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5 class="fw-bold">EQUIPO 1</h5>
+                    <p class="mb-1">Anthony Joel Ramón López - 2058255 ITS</p>
+                    <p class="mb-1">José Angel Martínez Maya - 1753837 ITS</p>
+                    <p class="mb-1">ESPACIO</p>
+                    <p>ESPACIO</p>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="botones.js"></script>
 </body>

@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olimpiadas 2026</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <style>
+        .card { transition: none; }
+    </style>
 </head>
 <body class="bg-light">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Olimpiadas 2026</a>
@@ -17,15 +20,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-
-                        <a class="nav-link" href="Pages/Pagina1.html">Ultimas Olimpiadas</a>
+                        <a class="nav-link" href="Pages/Pagina1.html">Últimas Olimpiadas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pages/Pagina2.html">Deportes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Pages/Pagina3.html">Logros</a>
-
                     </li>
                 </ul>
             </div>
@@ -35,138 +36,146 @@
     <!-- Hero Section -->
     <header class="py-5 mt-5">
         <div class="container text-center py-5">
-
             <h1 class="display-4 fw-bold">Olimpiadas 2026</h1>
             <div style="text-align: center;"> <br>
                 <img src="Img/otra.png" alt="Olimpiadas" width="500px">
             </div>
-
         </div>
     </header>
 
-    <!-- Información General -->
-            <main class="container mb-5">
+    <!-- Main Content -->
+    <main class="container mb-5">
         <div class="row g-4">
             <!-- Tarjeta 1 -->
             <div class="col-md-4">
-
-            <div class="card h-100 shadow-lg border-0 rounded-4">
-                <div class="card-body d-flex flex-column justify-content-between">
-                <div>
-                    <h5 class="card-title text-primary fw-bold">¿Qué son las Olimpiadas?</h5>
-                    <p class="card-text text-justify">
-                    Los Juegos Olímpicos, llamados también Olimpiadas, son el mayor evento deportivo internacional.
-                    Cada cuatro años, alrededor de doscientos atletas representantes de la mayoría de los países del mundo
-                    compiten en diversas disciplinas a lo largo de varios días. Se trata de uno de los eventos deportivos más
-                    televisados y célebres de la contemporaneidad.
-                    </p>
+                <div class="card h-100 shadow-lg border-0 rounded-4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">¿Qué son las Olimpiadas?</h5>
+                        <p class="card-text flex-grow-1">
+                            Evento deportivo global que reúne atletas de todo el mundo en competiciones de verano e invierno.
+                        </p>
+                        <button class="btn btn-primary" onclick="mostrarInfo('queSon')">Más Información</button>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <button class="btn btn-danger w-100">Más Información</button>
-                </div>
-
-                </div>
-            </div>
             </div>
 
             <!-- Tarjeta 2 -->
             <div class="col-md-4">
-            <div class="card h-100 shadow-lg border-0 rounded-4">
-                <div class="card-body d-flex flex-column justify-content-between">
-                <div>
-                    <h5 class="card-title text-success fw-bold">📅 Fecha y Ubicación</h5>
-                    <p class="card-text text-justify">Los Juegos Olímpicos que se celebran en el año 2026 son de Invierno.</p>
-                    <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Fecha Inicial:</strong> 04 de febrero del 2026.</li>
-                    <li class="list-group-item"><strong>Celebración:</strong> Del 06 al 22 de febrero.</li>
-                    <li class="list-group-item"><strong>Ubicación:</strong> Milán-Cortina d'Ampezzo, Italia.</li>
-                    </ul>
+                <div class="card h-100 shadow-lg border-0 rounded-4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success fw-bold">📅 Fecha y Ubicación</h5>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item"><strong>Fecha:</strong> 06-22 Feb 2026</li>
+                            <li class="list-group-item"><strong>Sede:</strong> Milán-Cortina d'Ampezzo</li>
+                            <li class="list-group-item"><strong>País:</strong> Italia</li>
+                        </ul>
+                        <button class="btn btn-primary mt-3" onclick="mostrarInfo('milan2026')">Ver Detalles</button>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <button class="btn btn-danger w-100">Ver Ubicación</button>
-                </div>
-                </div>
-            </div>
             </div>
 
             <!-- Tarjeta 3 -->
             <div class="col-md-4">
-            <div class="card h-100 shadow-lg border-0 rounded-4">
-                <div class="card-body d-flex flex-column justify-content-between">
-                <div>
-                    <h5 class="card-title text-warning fw-bold">📜 Historia de los Juegos Olímpicos</h5>
-                    <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-justify">
-                        Desde el siglo VIII a.C., las ciudades de la antigua Grecia celebraban competencias deportivas para rendir culto
-                        a los dioses del Olimpo. Cada cuatro años organizaban fiestas donde se reconocía a los mejores atletas.
-                    </li>
-                    <li class="list-group-item text-justify">
-                        Durante estos juegos se decretaba la "paz olímpica" (ékécheira) y todas las polis detenían sus ejércitos.
-                        Por esta razón, los Juegos Olímpicos simbolizan la competencia pacífica entre culturas.
-                    </li>
-                    <li class="list-group-item text-justify">
-                        Se celebraron hasta que, en el año 393 d.C., el emperador Teodosio I los prohibió por considerarlos paganos.
-                        La tradición olímpica fue retomada a finales del siglo XIX.
-                    </li>
-                    </ul>
+                <div class="card h-100 shadow-lg border-0 rounded-4">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-warning fw-bold">📜 Historia Olímpica</h5>
+                        <p class="card-text flex-grow-1">
+                            Desde los antiguos juegos griegos hasta la era moderna, conoce la evolución de este evento.
+                        </p>
+                        <button class="btn btn-primary mt-auto" onclick="mostrarInfo('historia')">Linea del Tiempo</button>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <button class="btn btn-danger w-100">Más Información</button>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
 
         <!-- Sección Página Oficial -->
         <div class="row mt-5">
             <div class="col-12">
-            <div class="card shadow-lg border-0 rounded-4">
-                <div class="card-body">
-                <h2 class="text-center mb-4">🌐 Página Oficial de los Juegos Olímpicos</h2>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.olympics.com/es/eventos-deportivos/milano-cortina-2026-winter-olympic-games" class="rounded" allowfullscreen></iframe>
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">🌐 Página Oficial de los Juegos Olímpicos</h2>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.olympics.com/es/eventos-deportivos/milano-cortina-2026-winter-olympic-games" class="rounded" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
-        </main>
-        <footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
-  <div class="container">
-    <div class="row">
-      <!-- Columna 1 -->
-      <div class="col-md-6 mb-3">
-        <h5 class="fw-bold">PIA</h5>
-        <p class="text-light">
-          Este es el PIA de la materia Lenguajes de Programación y Lab. Consiste en 
-          una Página Web que habla sobre el tema de las Olimpiadas.
-        </p>
-      </div>
+    </main>
 
-      <!-- Pie de pagina -->
-      <div class="col-md-6 mb-3">
-        <h5 class="fw-bold">EQUIPO 1 - Lenguajes de Programación y Lab</h5>
-        <a href="#" class="text-light me-3 text-decoration-none">
-          <i></i> Anthony Joel Ramón López -    2058255 ITS <br>
-        </a>
-        <a href="#" class="text-light me-3 text-decoration-none">
-          <i></i> José Angel Martínez Maya -    1753837 ITS <br>
-        </a>
-        <a href="#" class="text-light text-decoration-none">
-          <i></i> ESPACIO <br>
-        </a>
-        <a href="#" class="text-light text-decoration-none">
-          <i></i> ESPACIO 
-        </a>  
-      </div>
+    <!-- Modal Simplificado -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Información</h5>
+                    <button type="button" class="btn btn-danger ms-auto" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <div id="queSon" class="d-none">
+                        <p>Evento deportivo internacional con participación de 206 países.</p>
+                        <ul class="list-unstyled">
+                            <li>🏟️ 15 disciplinas deportivas</li>
+                            <li>⛷️ 3 sedes principales</li>
+                            <li>🇮🇹 Segunda edición en Italia</li>
+                        </ul>
+                    </div>
+
+                    <div id="milan2026" class="d-none">
+                        <p>Principales ubicaciones:</p>
+                        <ul>
+                            <li>Milán: Ceremonias y hockey</li>
+                            <li>Cortina: Esquí alpino</li>
+                            <li>Verona: Patinaje artístico</li>
+                        </ul>
+                    </div>
+
+                    <div id="historia" class="d-none">
+                        <p>Hitos históricos:</p>
+                        <ul>
+                            <li>1896: Primeros Juegos Modernos</li>
+                            <li>1924: Primera edición de invierno</li>
+                            <li>2026: 25ª edición invernal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <hr class="border-light">
-    <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos. Todos los derechos reservados.</p>
-  </div>
-</footer>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>Equipo de Desarrollo</h5>
+                    <ul class="list-unstyled">
+                        <li>Anthony Joel Ramón López - 2058255</li>
+                        <li>José Angel Martínez Maya - 1753837</li>
+                        <li>Materia: Lenguajes de Programación</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Recursos Oficiales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://olympics.com" class="text-white text-decoration-none">Sitio Oficial COI</a></li>
+                        <li><a href="https://milanocortina2026.org" class="text-white text-decoration-none">Sitio Oficial 2026</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">© 2026 Lenguajes-Programación Fime. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function mostrarInfo(tipo) {
+            document.querySelectorAll('#modalContent > div').forEach(div => div.classList.add('d-none'));
+            document.getElementById(tipo).classList.remove('d-none');
+            new bootstrap.Modal(document.getElementById('infoModal')).show();
+        }
+    </script>
 </body>
 </html>

@@ -1,143 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundial 2026</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundial 2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">Olimpiadas 2026</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="">Verano</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pagina2.html">Invierno</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pagina3.html">Tradiciones y Símbolos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container mt-5 pt-5">
-        <h1 class="text-center mb-5">Anfitriones de las Olimpiadas</h1>
-        
-        <div class="row g-4">
-            <!-- Estadio 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="../Img/PARIS2024.jpg" class="card-img-top" alt="Estadio Azteca">
-                    <div class="card-body">
-                        <h5 class="card-title">Paris 2024</h5>
-                        <p class="card-text">
-                            <strong>Ciudad:</strong> París, Francia<br>
-                            <strong>Capacidad:</strong> Estadio de Francia (80,000 aprox.)<br>
-                            <strong>Historia:</strong> Primeros Juegos Olímpicos con paridad de género total. Ceremonia de apertura en el río Sena.<br>
-                            <strong>Fecha:</strong> 🇺🇸 EE.UU. lideró con 126 medallas.
-                        </p>
-                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('paris')">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-            <!-- Estadio 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="../Img/EstadioAzteca.jpg" class="card-img-top" alt="Estadio Azteca">
-                    <div class="card-body">
-                        <h5 class="card-title">Estadio Azteca</h5>
-                        <p class="card-text">
-                            <strong>Ciudad:</strong> CDMX<br>
-                            <strong>Capacidad:</strong> 87,523 espectadores<br>
-                            <strong>Historia:</strong> Único estadio en albergar dos finales de Mundial
-                        </p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                    </div>
-                </div>
-            </div>   
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="../Img/TOKYO2020.jpeg" class="card-img-top" alt="Estadio Azteca">
-                    <div class="card-body">
-                        <h5 class="card-title">Tokyo 2020</h5>
-                        <p class="card-text">
-                            <strong>Ciudad:</strong> Tokio, Japón<br>
-                            <strong>Capacidad:</strong> Sin público por COVID-19<br>
-                            <strong>Historia:</strong> Primeros Juegos aplazados por una pandemia. Debut del skateboarding, escalada y karate.<br>
-                            <strong>Medalleros:</strong> 🇺🇸 EE.UU. ganó 113 medallas. 
-                        </p>
-                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('tokyo')">Ver más</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="../Img/RIO2016.jpg" class="card-img-top" alt="Estadio Azteca">
-                    <div class="card-body">
-                        <h5 class="card-title">Rio de Janeiro 2016</h5>
-                        <p class="card-text">
-                            <strong>Ciudad:</strong> Rio de Janeiro, Brasil<br>
-                            <strong>Capacidad:</strong> 74,738 espectadores (Maracaná, ceremonia de apertura)<br>
-                            <strong>Historia:</strong> Primeros Juegos Olímpicos en Sudamérica. Participaron 207 naciones.<br>
-                            <strong>Medalleros:</strong> 🇺🇸 EE.UU. lideró con 121 medallas.
-                        </p>
-                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('rio')">Ver más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-<footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
-  <div class="container">
-    <div class="row">
-      <!-- Columna 1 -->
-      <div class="col-md-6 mb-3">
-        <h5 class="fw-bold">PIA</h5>
-        <p class="text-light">
-          Este es el PIA de la materia Lenguajes de Programación y Lab. Consiste en 
-          una Página Web que habla sobre el tema de las Olimpiadas.
-        </p>
-      </div>
-
-
-
-      <!-- Pie de pagina -->
-      <div class="col-md-6 mb-3">
-        <h5 class="fw-bold">EQUIPO 1 - Lenguajes de Programación y Lab</h5>
-        <a href="#" class="text-light me-3 text-decoration-none">
-          <i></i> Anthony Joel Ramón López -    2058255 ITS <br>
-        </a>
-        <a href="#" class="text-light me-3 text-decoration-none">
-          <i></i> José Angel Martínez Maya -    1753837 ITS <br>
-        </a>
-        <a href="#" class="text-light text-decoration-none">
-          <i></i> ESPACIO <br>
-        </a>
-        <a href="#" class="text-light text-decoration-none">
-          <i></i> ESPACIO 
-        </a>  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Olimpiadas 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Últimas Olimpiadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina2.html">Deportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina3.html">Logros</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <hr class="border-light">
-    <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos. Todos los derechos reservados.</p>
-  </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container mt-5 pt-5">
+    <div class="row g-4">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="../Img/RIO2016.jpg" class="card-img-top" alt="Rio 2016">
+          <div class="card-body">
+            <h5 class="card-title">Rio de Janeiro 2016</h5>
+            <p class="card-text">
+              <strong>Ciudad:</strong> Rio de Janeiro, Brasil<br>
+              <strong>Capacidad:</strong> 74,738 espectadores (Maracaná)<br>
+              <strong>Historia:</strong> Primeros Juegos Olímpicos en Sudamérica.<br>
+              <strong>Medalleros:</strong> 🇺🇸 EE.UU. lideró con 121 medallas.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="mostrarInfo('rio')">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="../Img/otra.png" class="card-img-top" alt="Tokio 2020">
+          <div class="card-body">
+            <h5 class="card-title">Tokio 2020</h5>
+            <p class="card-text">
+              <strong>Ciudad:</strong> Tokio, Japón<br>
+              <strong>Capacidad:</strong> 68,000 espectadores (Estadio Nacional de Japón)<br>
+              <strong>Historia:</strong> Se pospusieron por COVID-19. Gran evento de resiliencia.<br>
+              <strong>Medalleros:</strong> 🇺🇸 EE.UU. nuevamente en la cima.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="mostrarInfo('tokyo')">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="../Img/longres2022.png" class="card-img-top" alt="Londres 2012">
+          <div class="card-body">
+            <h5 class="card-title">Londres 2012</h5>
+            <p class="card-text">
+              <strong>Ciudad:</strong> Londres, Reino Unido<br>
+              <strong>Capacidad:</strong> 80,000 espectadores (Estadio Olímpico de Londres)<br>
+              <strong>Historia:</strong> Londres se convirtió en la primera ciudad en albergar tres veces los Juegos.<br>
+              <strong>Medalleros:</strong> 🇺🇸 EE.UU. y 🇨🇳 China dominaron.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="mostrarInfo('londres')">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5 class="fw-bold">PIA</h5>
+          <p class="text-light">
+            Este es el PIA de la materia Lenguajes de Programación y Lab. Consiste en
+            una Página Web que habla sobre el tema de las Olimpiadas.
+          </p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5 class="fw-bold">EQUIPO 1 - Lenguajes de Programación y Lab</h5>
+          <p class="mb-1">Anthony Joel Ramón López - 2058255 ITS</p>
+          <p class="mb-1">José Angel Martínez Maya - 1753837 ITS</p>
+          <p class="mb-1">ESPACIO</p>
+          <p>ESPACIO</p>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos. Todos los derechos reservados.</p>
+    </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="botones.js"></script>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalInfo" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Información detallada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalContent"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="botones.js"></script>
 </body>
 </html>
