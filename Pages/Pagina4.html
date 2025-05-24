@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olimpiadas 2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+</style>
+
+</head>
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Olimpiadas 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina1.html">Últimas Olimpiadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina2.html">Deportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina3.html">Medallistas mexicanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Historia de las Olimpiadas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container mt-5 pt-5">
+    <div class="row g-4">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="../Img/renacer.jpg" class="card-img-top" alt="Juegos Olímpicos Antiguos">
+          <div class="card-body">
+            <h5 class="card-title">Juegos Olímpicos Antiguos</h5>
+            <p class="card-text">
+              <strong>Origen:</strong> La historia de los Juegos Olímpicos Antiguos se remonta a unos 3000 años, en el Peloponeso, en la antigua Grecia.<br>
+              <strong>Celebración:</strong> Los Juegos se celebraban cada cuatro años en Olimpia, un lugar sagrado dedicado a Zeus, el dios supremo de la religión griega.<br>
+              <strong>Deportes:</strong> Los primeros deportes en los Juegos Olímpicos Antiguos eran principalmente carreras, lucha, satlo, lanzamiento de disco y lanzamiento de jabalina.<br>
+              <strong>Significado:</strong> Los juegos en ese tiempo eran un evento cultural y religioso que unia a las diferentes polis griegas en un espirítu de competencia y paz.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="mostrarInfo('Antiguos')">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="../Img/modernos.jpg" class="card-img-top" alt="Juegos Olímpicos Modernos">
+          <div class="card-body">
+            <h5 class="card-title">Juegos Olímpicos Modernos</h5>
+            <p class="card-text">
+              <strong>Fundación:</strong> Los Juegos Olímpicos Modernos fueron fundados por el barón Pierre de Coubertín en 1894, quien creó el Comité Olímpico Internacional.<br>
+              <strong>Primeros Juegos:</strong> Los primeros Juegos Olímpicos Modernos se celebraron en Atenas en 1896.<br>
+              <strong>Evolución:</strong> Han evolucionado desde sus inicios, incluyendo más deportes, aumentando el número de participantes y convirtiéndose en un evento global.<br>
+              <strong>Objetivos:</strong> Buscan promover la paz, la cooperación y la amistad entre las naciones a través del deporte.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="mostrarInfo('Modernos')">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="../Img/simbolos.jpg" class="card-img-top" alt="Simbolos">
+          <div class="card-body">
+            <h5 class="card-title">Simbolos de los Juegos Olímpicos</h5>
+            <p class="card-text">
+              <strong>Anillos Olímpicos:</strong> Son cinco anillos entrelazados de diferentes colores: azul, amarillo, negro, verde y rojo. Representan la unión de los cinco continentes del mundo en los 
+              Juegos Olímpicos, simbolizando la globalización del deporte y la amistad internacional. Cada color también tiene un significado específico: Azul (Europa), Amarillo (Asia), Negro (África), Verde (Oceanía) y Rojo (América).<br>
+              <strong>Bandera Olímpica:</strong> Un fondo blanco con los cinco anillos olímpicos en el centro. Representa el espíritu olímpico de paz y amistad universal, así como la unidad de los atletas de todo el mundo.<br>
+              <strong>Llama Olímpica:</strong> Un fuego que se enciende durante la ceremonia de apertura de los Juegos Olímpicos. Simboliza la continuidad de los Juegos Olímpicos a lo largo de la historia, la esperanza, la unidad y el espíritu competitivo.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="mostrarInfo('Simbolos')">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5 class="fw-bold">PIA</h5>
+          <p class="text-light">
+            Este es el PIA de la materia Lenguajes de Programación y Lab. Consiste en
+            una Página Web que habla sobre el tema de las Olimpiadas.
+          </p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h5 class="fw-bold">EQUIPO 1 - Lenguajes de Programación y Lab</h5>
+          <p class="mb-1">Anthony Joel Ramón López - 2058255 ITS</p>
+          <p class="mb-1">José Angel Martínez Maya - 1753837 ITS</p>
+          <p class="mb-1">ESPACIO</p>
+          <p>ESPACIO</p>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalInfo" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Información detallada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalContent"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="botones.js"></script>
+</body>
+</html>
