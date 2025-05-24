@@ -1,8 +1,16 @@
 function mostrarInfo(key) {
     const info = {
-
-            
         // Para index.html
+        rio:`
+        
+        `,
+        tokyo:`
+        
+        `,
+        londres:`
+        
+        `,    
+        // Para Pagina4.html
         Antiguos: `
             <p>Las primeras Olimpíadas se celebraron a partir del año 776 a. C. en la primera luna llena después del solsticio de verano (hacia mediados de julio) en honor a Zeus. El vencedor de la primera y única prueba, la carrera a pie del stadion, fue Koroibos de Elis y, a partir de entonces, se registraron todos los vencedores y se dio nombre a cada olimpíada, lo que nos proporcionó la primera cronología exacta del mundo griego antiguo. Una olimpíada no solo era el nombre del evento en sí, sino también del período entre los juegos. Durante una tregua panhelénica de tres meses, los atletas y hasta 40 000 espectadores venían de toda Grecia para participar en los Juegos de Olimpia. Más tarde, se organizarían otros juegos en otros lugares sagrados como Delfos, Istmia y Nemea, pero los Juegos Olímpicos seguirían siendo los más prestigiosos.</p>
         `,
