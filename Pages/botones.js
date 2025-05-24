@@ -3,14 +3,20 @@ function mostrarInfo(key) {
 
             
         // Para index.html
-        rio: `
-            <p>Los Juegos Olímpicos de Río 2016 fueron los primeros celebrados en América del Sur. El evento trajo de vuelta el golf al programa olímpico después de 112 años y vio el debut del rugby sevens. Estos Juegos fueron escenario de actuaciones memorables, incluyendo las últimas participaciones olímpicas de leyendas como el nadador Michael Phelps y el velocista Usain Bolt, así como el deslumbrante debut de la gimnasta Simone Biles.</p>
+        Antiguos: `
+            <p>Las primeras Olimpíadas se celebraron a partir del año 776 a. C. en la primera luna llena después del solsticio de verano (hacia mediados de julio) en honor a Zeus. El vencedor de la primera y única prueba, la carrera a pie del stadion, fue Koroibos de Elis y, a partir de entonces, se registraron todos los vencedores y se dio nombre a cada olimpíada, lo que nos proporcionó la primera cronología exacta del mundo griego antiguo. Una olimpíada no solo era el nombre del evento en sí, sino también del período entre los juegos. Durante una tregua panhelénica de tres meses, los atletas y hasta 40 000 espectadores venían de toda Grecia para participar en los Juegos de Olimpia. Más tarde, se organizarían otros juegos en otros lugares sagrados como Delfos, Istmia y Nemea, pero los Juegos Olímpicos seguirían siendo los más prestigiosos.</p>
         `,
-        tokyo: `
-            <p>Los Juegos Olímpicos de Tokio 2020 se celebraron en un contexto sin precedentes debido a la pandemia global de COVID-19. La mayoría de los eventos se llevaron a cabo sin espectadores y bajo estrictos protocolos sanitarios. A pesar de los desafíos, los Juegos simbolizaron la resiliencia y la unidad global.</p>
+        Modernos: `
+            <h5>El renacimiento de los Juegos Olímpicos</h5>
+            <p>Transcurrieron 15 siglos hasta que a finales del siglo XIX, la insistencia de Pierre de Frédy, barón de Coubertin, consiguió poner de nuevo en el mapa a los Juegos Olímpicos. Este noble francés se interesó desde muy joven por la historia, la educación y el deporte, y fue en el Instituto Parisino de Estudios Políticos (Sciences Po) donde se le ocurrió unir sus tres pasiones y revivir esta antigua tradición de la cultura griega. En junio de 1894, la Universidad de la Sorbona de París acogió un encuentro entre Coubertin y los representantes deportivos de 11 países. Este fue el germen que dio fruto a los planes de restauración de los Juegos Olímpicos modernos.</p>
         `,
-        londres: `
-            <p>Los Juegos Olímpicos de Londres 2012 marcaron la tercera vez que la capital británica albergaba los Juegos Olímpicos de Verano. Destacaron por su enfoque en la sostenibilidad y la innovación, con el icónico Estadio Olímpico y el legado de regeneración urbana en East London.</p>
+        Simbolos: `
+            <h5>Otros Símbolos</h5>
+            <ul>
+                <li><strong>Juramento Olímpico:</strong> Un discurso que pronuncian los atletas, los jueces y los entrenadores antes de la apertura de los Juegos, promoviendo los valores olímpicos.</li>
+                <li><strong>Himno Olímpico:</strong> Una canción que se interpreta durante la ceremonia de apertura y cierre de los Juegos Olímpicos. </li>
+                <li><strong>Corona de Olivos:</strong> Una tradición que se remonta a los Juegos Olímpicos de la antigüedad, otorgada a los ganadores de las competencias.</li>
+            </ul>
         `,
 
         // Para Pagina2.html (Deportes)
