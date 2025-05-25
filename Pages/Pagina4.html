@@ -3,16 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Olimpiadas 2026</title>
+  <title>Historia Olímpica Completa</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="index.css" />
   <style>
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-</style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .hero-section {
+      background: #0d6efd;
+      color: white;
+      padding: 4rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    .azul-subtle {
+      color: #0d6efd;
+    }
+    
+    .card {
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+    }
 
+    .card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .table-custom thead {
+      background-color: #e9f2ff;
+    }
+
+    .historia-content {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .info-card {
+      border-left: 4px solid #0d6efd;
+    }
+  </style>
 </head>
 <body class="bg-light">
   <!-- Navbar -->
@@ -25,7 +56,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="Pagina1.html">Últimas Olimpiadas</a>
+            <a class="nav-link active" href="#">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina1.html">Ultimas Olimpiadas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Pagina2.html">Deportes</a>
@@ -33,111 +67,352 @@
           <li class="nav-item">
             <a class="nav-link" href="Pagina3.html">Logros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Historia de las Olimpiadas</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Contenido principal -->
   <main class="container mt-5 pt-5">
-    <div class="row g-4">
+    
+    <div class="hero-section text-center rounded-3">
+      <h1 class="display-4 fw-bold">Historia Olímpica Completa</h1>
+      <p class="lead">Desde la Antigua Grecia hasta la Era Moderna</p>
+    </div>
+
+     
+    <section class="row mb-5">
+      <div class="col-12">
+        <div class="card shadow-sm">
+          <div class="card-body historia-content">
+            <h2 class="azul-subtle mb-4">📖 Historia Completa</h2>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="azul-subtle">Periodo Antiguo (776 a.C. - 393 d.C.)</h4>
+                <ul>
+                  <li>Ceremonias religiosas en honor a Zeus</li>
+                  <li>Atletas competían desnudos</li>
+                  <li>Tregua sagrada durante los juegos</li>
+                  <li>Eventos principales: Stadion (carrera 192m), Pentatlón</li>
+                  <li>Prohibición por el emperador Teodosio I</li>
+                </ul>
+              </div>
+              
+              <div class="col-md-6">
+                <h4 class="azul-subtle">Era Moderna (1896 - Actualidad)</h4>
+                <ul>
+                  <li>Primeros Juegos Modernos: 241 atletas, 14 países</li>
+                  <li>Primera participación femenina: 1900 (París)</li>
+                  <li>Juegos cancelados: 1916, 1940, 1944 (guerras mundiales)</li>
+                  <li>Juegos de Invierno: Desde 1924 (Chamonix)</li>
+                  <li>Última edición: Tokio 2020 (2021)</li>
+                </ul>
+              </div>
+            </div>
+
+            <h4 class="azul-subtle mt-4">Datos Estadísticos</h4>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5>🏟️ Sedes Destacadas</h5>
+                    <p>• Londres: 3 ediciones<br>
+                       • París: 3 ediciones<br>
+                       • Los Ángeles: 2 ediciones</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-3">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5>📅 Evolución Temporal</h5>
+                    <p>• 1896: 14 países<br>
+                       • 1952: 69 países<br>
+                       • 2020: 206 países</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mb-3">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5>🌐 Expansión Global</h5>
+                    <p>• 1900: Primeros 5 continentes<br>
+                       • 1964: Primeros Juegos en Asia<br>
+                       • 2016: Primeros en Sudamérica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row g-4 mb-5">
       <!-- Tarjeta 1 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow">
-          <img src="../Img/renacer.jpg" class="card-img-top" alt="Juegos Olímpicos Antiguos">
+        <div class="card h-100 shadow-sm info-card">
+          <img src="../Img/grecia.jpg" class="card-img-top" alt="Juegos Antiguos">
           <div class="card-body">
-            <h5 class="card-title">Juegos Olímpicos Antiguos</h5>
+            <h5 class="card-title azul-subtle">Orígenes en Grecia</h5>
             <p class="card-text">
-              <strong>Origen:</strong> La historia de los Juegos Olímpicos Antiguos se remonta a unos 3000 años, en el Peloponeso, en la antigua Grecia.<br>
-              <strong>Celebración:</strong> Los Juegos se celebraban cada cuatro años en Olimpia, un lugar sagrado dedicado a Zeus, el dios supremo de la religión griega.<br>
-              <strong>Deportes:</strong> Los primeros deportes en los Juegos Olímpicos Antiguos eran principalmente carreras, lucha, satlo, lanzamiento de disco y lanzamiento de jabalina.<br>
-              <strong>Significado:</strong> Los juegos en ese tiempo eran un evento cultural y religioso que unia a las diferentes polis griegas en un espirítu de competencia y paz.
+              • Primeros registros: 776 a.C.<br>
+              • Duración: 5 días<br>
+              • Eventos principales: Carreras, lucha
             </p>
-            <a href="#" class="btn btn-primary" onclick="mostrarInfo('Antiguos')">Ver más</a>
+            <button class="btn btn-primary" 
+                    onclick="showInfo('Juegos Antiguos', '<p><strong>Datos clave:</strong></p><ul><li>Celebrados en Olimpia en honor a Zeus</li><li>Solo hombres griegos libres podían participar</li><li>Los atletas competían desnudos</li><li>Premio: Corona de olivo silvestre</li></ul>')">
+              Ver detalles
+            </button>
           </div>
         </div>
       </div>
 
       <!-- Tarjeta 2 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow">
-          <img src="../Img/modernos.jpg" class="card-img-top" alt="Juegos Olímpicos Modernos">
+        <div class="card h-100 shadow-sm info-card">
+          <img src="../Img/eramoderna.jpg" class="card-img-top" alt="Renacimiento">
           <div class="card-body">
-            <h5 class="card-title">Juegos Olímpicos Modernos</h5>
+            <h5 class="card-title azul-subtle">Era Moderna</h5>
             <p class="card-text">
-              <strong>Fundación:</strong> Los Juegos Olímpicos Modernos fueron fundados por el barón Pierre de Coubertín en 1894, quien creó el Comité Olímpico Internacional.<br>
-              <strong>Primeros Juegos:</strong> Los primeros Juegos Olímpicos Modernos se celebraron en Atenas en 1896.<br>
-              <strong>Evolución:</strong> Han evolucionado desde sus inicios, incluyendo más deportes, aumentando el número de participantes y convirtiéndose en un evento global.<br>
-              <strong>Objetivos:</strong> Buscan promover la paz, la cooperación y la amistad entre las naciones a través del deporte.
+              • Refundación: 1896<br>
+              • Primeros juegos: Atenas<br>
+              • Países: 14 participantes
             </p>
-            <a href="#" class="btn btn-primary" onclick="mostrarInfo('Modernos')">Ver más</a>
+            <button class="btn btn-primary" 
+                    onclick="showInfo('Era Moderna', '<p><strong>Datos clave:</strong></p><ul><li>Organizados por Pierre de Coubertin</li><li>241 atletas masculinos</li><li>9 deportes, 43 eventos</li><li>Primer campeón: James Connolly (triple salto)</li></ul>')">
+              Ver detalles
+            </button>
           </div>
         </div>
       </div>
 
       <!-- Tarjeta 3 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow">
-          <img src="../Img/simbolos.jpg" class="card-img-top" alt="Simbolos">
+        <div class="card h-100 shadow-sm info-card">
+          <img src="../Img/simbolos.jpg" class="card-img-top" alt="Símbolos">
           <div class="card-body">
-            <h5 class="card-title">Simbolos de los Juegos Olímpicos</h5>
+            <h5 class="card-title azul-subtle">Símbolos Olímpicos</h5>
             <p class="card-text">
-              <strong>Anillos Olímpicos:</strong> Son cinco anillos entrelazados de diferentes colores: azul, amarillo, negro, verde y rojo. Representan la unión de los cinco continentes del mundo en los 
-              Juegos Olímpicos, simbolizando la globalización del deporte y la amistad internacional. Cada color también tiene un significado específico: Azul (Europa), Amarillo (Asia), Negro (África), Verde (Oceanía) y Rojo (América).<br>
-              <strong>Bandera Olímpica:</strong> Un fondo blanco con los cinco anillos olímpicos en el centro. Representa el espíritu olímpico de paz y amistad universal, así como la unidad de los atletas de todo el mundo.<br>
-              <strong>Llama Olímpica:</strong> Un fuego que se enciende durante la ceremonia de apertura de los Juegos Olímpicos. Simboliza la continuidad de los Juegos Olímpicos a lo largo de la historia, la esperanza, la unidad y el espíritu competitivo.
+              • Anillos: 1913<br>
+              • Lema: Citius, Altius, Fortius<br>
+              • Llama: Tradición desde 1928
             </p>
-            <a href="#" class="btn btn-primary" onclick="mostrarInfo('Simbolos')">Ver más</a>
+            <button class="btn btn-primary" 
+                    onclick="showInfo('Símbolos', '<p><strong>Significados:</strong></p><ul><li>Anillos: 5 continentes unidos</li><li>Colores: Presentes en todas las banderas</li><li>Llama: Encendida en Olimpia con espejos parabólicos</li><li>Mascotas: Desde 1972 (Munich)</li></ul>')">
+              Ver detalles
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm info-card">
+          <img src="../Img/recordHistoricos.jpg" class="card-img-top" alt="Récords">
+          <div class="card-body">
+            <h5 class="card-title azul-subtle">Récords Históricos</h5>
+            <p class="card-text">
+              • Michael Phelps: 28 medallas<br>
+              • Larisa Latynina: 18 medallas<br>
+              • Usain Bolt: 9.63s en 100m
+            </p>
+            <button class="btn btn-primary" 
+                    onclick="showInfo('Récords', '<p><strong>Plusmarcas destacadas:</strong></p><ul><li>Natación: Phelps (8 oros en 2008)</li><li>Atletismo: Beamon (8.90m salto largo 1968)</li><li>Gimnasia: Comaneci (10 perfecto en 1976)</li><li>Hockey: India (6 oros consecutivos)</li></ul>')">
+              Ver detalles
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm info-card">
+          <img src="../Img/medallas.jpg" class="card-img-top" alt="Medallas">
+          <div class="card-body">
+            <h5 class="card-title azul-subtle">Medallería Histórica</h5>
+            <p class="card-text">
+              • EE.UU.: 1,229 oros<br>
+              • URSS: 473 oros<br>
+              • China: 385 oros
+            </p>
+            <button class="btn btn-primary" 
+                    onclick="showInfo('Medallas', '<p><strong>Top histórico completo:</strong></p><ol><li>EE.UU. - 3,078 total</li><li>URSS - 1,204</li><li>Alemania - 1,345</li><li>Reino Unido - 1,232</li><li>China - 936</li></ol>')">
+              Ver detalles
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm info-card">
+          <img src="../Img/modernas.jpg" class="card-img-top" alt="Actualidad">
+          <div class="card-body">
+            <h5 class="card-title azul-subtle">Olimpiadas Modernas</h5>
+            <p class="card-text">
+              • Deportes nuevos: Skate, surf<br>
+              • Tecnología: VAR, cronometraje<br>
+              • Sostenibilidad: Medallas recicladas
+            </p>
+            <button class="btn btn-primary" 
+                    onclick="showInfo('Actualidad', '<p><strong>Innovaciones recientes:</strong></p><ul><li>Tokio 2020: Posposición por pandemia</li><li>París 2024: Breakdance como deporte</li><li>Inteligencia Artificial en juicios</li><li>Transmisiones 8K y realidad virtual</li></ul>')">
+              Ver detalles
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <!-- Top 10 Medallería -->
+    <section class="row mt-5">
+      <div class="col-12">
+        <div class="card shadow-sm">
+          <div class="card-header azul-subtle">
+            <h2>🏅 Top 10 Países Históricos</h2>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead class="table-primary">
+                  <tr>
+                    <th>#</th>
+                    <th>País</th>
+                    <th>Oro</th>
+                    <th>Plata</th>
+                    <th>Bronce</th>
+                    <th>Total</th>
+                    <th>Primera participación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>🇺🇸 Estados Unidos</td>
+                    <td>1,229</td>
+                    <td>1,000</td>
+                    <td>849</td>
+                    <td>3,078</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>🇷🇺 URSS</td>
+                    <td>473</td>
+                    <td>376</td>
+                    <td>355</td>
+                    <td>1,204</td>
+                    <td>1952</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>🇩🇪 Alemania</td>
+                    <td>428</td>
+                    <td>444</td>
+                    <td>473</td>
+                    <td>1,345</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>🇬🇧 Reino Unido</td>
+                    <td>385</td>
+                    <td>419</td>
+                    <td>428</td>
+                    <td>1,232</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>🇨🇳 China</td>
+                    <td>385</td>
+                    <td>316</td>
+                    <td>235</td>
+                    <td>936</td>
+                    <td>1984</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>🇫🇷 Francia</td>
+                    <td>368</td>
+                    <td>412</td>
+                    <td>415</td>
+                    <td>1,195</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>🇮🇹 Italia</td>
+                    <td>297</td>
+                    <td>324</td>
+                    <td>349</td>
+                    <td>970</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>🇭🇺 Hungría</td>
+                    <td>211</td>
+                    <td>194</td>
+                    <td>230</td>
+                    <td>635</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>🇦🇺 Australia</td>
+                    <td>192</td>
+                    <td>200</td>
+                    <td>248</td>
+                    <td>640</td>
+                    <td>1896</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>🇸🇪 Suecia</td>
+                    <td>212</td>
+                    <td>227</td>
+                    <td>234</td>
+                    <td>673</td>
+                    <td>1896</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de Información -->
+    <div class="modal fade" id="infoModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body" id="modalContent"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <h5 class="fw-bold">PIA</h5>
-          <p class="text-light">
-            Este es el PIA de la materia Lenguajes de Programación y Lab. Consiste en
-            una Página Web que habla sobre el tema de las Olimpiadas.
-          </p>
-        </div>
-        <div class="col-md-6 mb-3">
-          <h5 class="fw-bold">EQUIPO 1 - Lenguajes de Programación y Lab</h5>
-          <p class="mb-1">Anthony Joel Ramón López - 2058255 ITS</p>
-          <p class="mb-1">José Angel Martínez Maya - 1753837 ITS</p>
-          <p class="mb-1">ESPACIO</p>
-          <p>ESPACIO</p>
-        </div>
-      </div>
-      <hr class="border-light" />
-      <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal fade" id="modalInfo" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Información detallada</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body" id="modalContent"></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="botones.js"></script>
+  <script>
+    function showInfo(title, content) {
+      document.getElementById('modalTitle').innerHTML = title;
+      document.getElementById('modalContent').innerHTML = content;
+      new bootstrap.Modal(document.getElementById('infoModal')).show();
+    }
+  </script>
 </body>
 </html>
