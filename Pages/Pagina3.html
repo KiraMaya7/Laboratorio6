@@ -3,84 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olimpiadas 2026</title>
+    <title>Olimpiadas 2026 - Logros Mexicanos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+        }
+        
+        .badge-medalla {
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 0.2em;
+        }
+        
+        .oro { background: #FFD700; color: #000; }
+        .plata { background: #C0C0C0; color: #000; }
+        .bronce { background: #CD7F32; color: #fff; }
+    </style>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">Olimpiadas 2026</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pagina4.html">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pagina1.html">Últimas Olimpiadas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pagina2.html">Deportes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Logros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Olimpiadas 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Pagina4.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina1.html">Ultimas Olimpiadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina2.html">Deportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <main class="container mt-5 pt-5">
-        <h1 class="text-center mb-5">Medallistas Mexicanos</h1>
+        <div class="text-center py-5">
+            <h1 class="display-4 fw-bold mb-4 text-danger">Medallistas Mexicanos</h1>
+            <p class="lead mb-5 mx-auto text-secondary" style="max-width: 800px;">
+                Descubre los 9 deportes donde México ha cosechado más triunfos en la historia olímpica. 
+                Nuestros atletas han demostrado excelencia y dedicación, dejando huella con sus logros 
+                en el máximo evento deportivo internacional.
+            </p>
+        </div>
         
         <div class="row g-4">
-            <!-- Tarjeta 1 - Prisca Awiti -->
+            <!-- Clavados -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow">
-                    <img src="../Img/Prisca_Awiti.jpeg" class="card-img-top" alt="Prisca Awiti">
+                    <img src="../Img/Osmar_Olvera.jpeg" class="card-img-top" alt="Clavados" style="height: 250px; object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Prisca Awiti</h5>
-                        <p class="card-text">
-                            <strong>Deporte:</strong> Judo (-63 kg)<br>
-                            <strong>Origen:</strong> Enfield, Inglaterra<br>
-                            <strong>Logro en París 2024:</strong> Medalla de Plata
-                        </p>
-                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('judo')">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Tarjeta 2 - Osmar Olvera -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="../Img/Osmar_Olvera.jpeg" class="card-img-top" alt="Osmar Olvera">
-                    <div class="card-body">
-                        <h5 class="card-title">Osmar Olvera</h5>
-                        <p class="card-text">
-                            <strong>Deporte:</strong> Clavados<br>
-                            <strong>Origen:</strong> Ciudad de México<br>
-                            <strong>Logros en París 2024:</strong> Plata y Bronce
-                        </p>
-                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('clavados')">Ver más</a>
+                        <h5 class="card-title text-danger">Clavados</h5>
+                        <p class="card-text text-secondary">Disciplina de precisión y elegancia donde México ha destacado históricamente...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('clavados')">Ver Logros</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 3 - Alejandra Valencia -->
+            <!-- Boxeo -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow">
-                    <img src="../Img/ALEJANDRA_VALENCIA.jpeg" class="card-img-top" alt="Alejandra Valencia">
+                    <img src="../Img/Logros/boxeo.jpg" class="card-img-top" alt="Boxeo" style="height: 250px; object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Alejandra Valencia</h5>
-                        <p class="card-text">
-                            <strong>Deporte:</strong> Tiro con Arco<br>
-                            <strong>Origen:</strong> Hermosillo, Sonora<br>
-                            <strong>Logros en París 2024:</strong> 2 Medallas de Bronce
-                        </p>
-                        <a href="#" class="btn btn-primary" onclick="mostrarInfo('arco')">Ver más</a>
+                        <h5 class="card-title text-danger">Boxeo</h5>
+                        <p class="card-text text-secondary">Deporte de combate donde la estrategia y fuerza mexicana han brillado...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('boxeo')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atletismo -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/Logros/atletismo.jpg" class="card-img-top" alt="Atletismo" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Atletismo</h5>
+                        <p class="card-text text-secondary">Pruebas de velocidad y resistencia donde México ha obtenido grandes victorias...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('atletismo')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taekwondo -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/Prisca_Awiti.jpeg" class="card-img-top" alt="Taekwondo" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Taekwondo</h5>
+                        <p class="card-text text-secondary">Arte marcial donde la técnica mexicana ha destacado internacionalmente...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('taekwondo')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ecuestres -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/Logros/encuentres.jpg" class="card-img-top" alt="Ecuestres" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Ecuestres</h5>
+                        <p class="card-text text-secondary">Disciplina de elegancia y precisión con importantes logros históricos...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('ecuestre')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Halterofilia -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/Logros/Halterofilia.jpg" class="card-img-top" alt="Halterofilia" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Halterofilia</h5>
+                        <p class="card-text text-secondary">Deporte de fuerza donde México ha mostrado gran potencia...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('halterofilia')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tiro con Arco -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/ALEJANDRA_VALENCIA.jpeg" class="card-img-top" alt="Tiro con Arco" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Tiro con Arco</h5>
+                        <p class="card-text text-secondary">Precisión y concentración en este deporte de altísimo nivel...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('tiroarco')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Natación -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/Logros/natacion.jpg" class="card-img-top" alt="Natación" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Natación</h5>
+                        <p class="card-text text-secondary">Deporte acuático con importantes participaciones mexicanas...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('natacion')">Ver Logros</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fútbol -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="../Img/Logros/futbol.jpg" class="card-img-top" alt="Fútbol" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Fútbol</h5>
+                        <p class="card-text text-secondary">Deporte rey con destacadas participaciones olímpicas...</p>
+                        <div class="d-grid">
+                            <button class="btn btn-danger" onclick="mostrarInfoMed('futbol')">Ver Logros</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,44 +192,119 @@
 
     <!-- Modal -->
     <div class="modal fade" id="modalInfo" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Detalles del logro</h5>
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title fw-bold">Detalles de Medallas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body" id="modalContent"></div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-4">
+                            <h3 class="fw-bold mb-4">🥇 Oro</h3>
+                            <div class="d-flex flex-column gap-2" id="oro"></div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4">
+                            <h3 class="fw-bold mb-4">🥈 Plata</h3>
+                            <div class="d-flex flex-column gap-2" id="plata"></div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4">
+                            <h3 class="fw-bold mb-4">🥉 Bronce</h3>
+                            <div class="d-flex flex-column gap-2" id="bronce"></div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h5 class="fw-bold mb-3 text-danger">Datos Destacados</h5>
+                    <p id="datosAdicionales" class="text-secondary"></p>
+                </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="bg-dark text-white mt-5 pt-4 pb-3 rounded-top-4 shadow-lg">
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <h5 class="fw-bold">PIA</h5>
-                    <p class="text-light">
-                        Este es el PIA de la materia Lenguajes de Programación y Lab.<br>
-                        Página Web sobre las Olimpiadas.
-                    </p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">PIA Lenguajes de Programación</h5>
+                    <p class="mb-0">Sitio informativo sobre los logros olímpicos mexicanos</p>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <h5 class="fw-bold">EQUIPO 1</h5>
-                    <p class="mb-1">Anthony Joel Ramón López - 2058255 ITS</p>
-                    <p class="mb-1">José Angel Martínez Maya - 1753837 ITS</p>
-                    <p class="mb-1">ESPACIO</p>
-                    <p>ESPACIO</p>
+                <div class="col-md-6 text-end">
+                    <small class="text-white-50">© 2024 Todos los derechos reservados</small>
                 </div>
             </div>
-            <hr class="border-light">
-            <p class="text-center text-secondary mb-0">&copy; 2025 Juegos Olímpicos</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="botones.js"></script>
+    <script>
+        const logros = {
+            clavados: {
+                oro: ["París 2024 - Osmar Olvera", "Londres 2012 - Iván García"],
+                plata: ["Río 2016 - Germán Sánchez"],
+                bronce: ["Tokio 2020 - Kevin Berlín"],
+                datos: "México ha ganado 14 medallas olímpicas en clavados desde 1948..."
+            },
+            boxeo: {
+                oro: ["México 1968 - Ricardo Delgado"],
+                plata: ["Londres 2012 - Óscar Valdez"],
+                bronce: ["Río 2016 - Misael Rodríguez"],
+                datos: "El boxeo mexicano ha obtenido 13 medallas olímpicas en total..."
+            },
+            atletismo: {
+                oro: ["México 1968 - Felipe Muñoz"],
+                plata: ["Berlín 1936 - Fidel Negrete"],
+                bronce: ["Los Ángeles 1984 - Raúl González"],
+                datos: "En atletismo, México ha logrado 10 medallas olímpicas..."
+            },
+            taekwondo: {
+                oro: ["Beijing 2008 - María Espinoza"],
+                plata: ["Londres 2012 - María Espinoza"],
+                bronce: ["Río 2016 - María Espinoza"],
+                datos: "El taekwondo ha dado 6 medallas olímpicas a México..."
+            },
+            ecuestre: {
+                oro: ["Londres 1948 - Humberto Mariles"],
+                plata: ["Helsinki 1952 - Joaquín Solano"],
+                bronce: ["Melbourne 1956 - Carlos Camino"],
+                datos: "En equitación, México ha obtenido 5 medallas olímpicas..."
+            },
+            halterofilia: {
+                oro: ["Sídney 2000 - Soraya Jiménez"],
+                plata: ["Tokio 2020 - Aremi Fuentes"],
+                bronce: ["Beijing 2008 - Damaris Aguirre"],
+                datos: "La halterofilia mexicana cuenta con 4 medallas olímpicas..."
+            },
+            tiroarco: {
+                oro: ["París 2024 - Alejandra Valencia"],
+                plata: ["Tokio 2020 - Equipo Mixto"],
+                bronce: [],
+                datos: "El tiro con arco ha obtenido 2 medallas olímpicas..."
+            },
+            natacion: {
+                oro: [],
+                plata: ["Melbourne 1956 - Walter Ocampo"],
+                bronce: ["México 1968 - Felipe Muñoz"],
+                datos: "En natación, México ha logrado 3 medallas olímpicas..."
+            },
+            futbol: {
+                oro: ["Londres 2012 - Equipo Masculino"],
+                plata: ["Tokio 2020 - Equipo Masculino"],
+                bronce: [],
+                datos: "El fútbol mexicano ha obtenido 2 medallas olímpicas..."
+            }
+        };
+
+        function mostrarInfoMed(deporte) {
+            const info = logros[deporte];
+            document.getElementById('oro').innerHTML = info.oro.map(m => `<span class="badge-medalla oro">${m}</span>`).join('');
+            document.getElementById('plata').innerHTML = info.plata.map(m => `<span class="badge-medalla plata">${m}</span>`).join('');
+            document.getElementById('bronce').innerHTML = info.bronce.map(m => `<span class="badge-medalla bronce">${m}</span>`).join('');
+            document.getElementById('datosAdicionales').textContent = info.datos;
+            new bootstrap.Modal(document.getElementById('modalInfo')).show();
+        }
+    </script>
 </body>
 </html>
